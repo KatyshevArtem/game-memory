@@ -69,17 +69,6 @@ public class TilesView extends View {
     public TilesView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         // 1) заполнить массив tiles случайными цветами
-        /*
-        cards[0] = new Card(0, 0, 200, 300, Color.YELLOW);
-        cards[1] = new Card(200 + 50, 0, 200 + 50, 300, Color.YELLOW);
-        cards[2] = new Card(500 + 50, 0, 200 + 50, 300, Color.GREEN);
-        cards[3] = new Card(800 + 50, 0, 200 + 50, 300, Color.GREEN);
-        cards[4] = new Card(0, 300 + 50, 200, 300, Color.RED);
-        cards[5] = new Card(200 + 50, 300 + 50, 200 + 50, 300, Color.RED);
-        cards[6] = new Card(500 + 50, 300 + 50, 200 + 50, 300, Color.BLUE);
-        cards[7] = new Card(800 + 50, 300 + 50, 200 + 50, 300, Color.BLUE);
-        listCards = (new ArrayList<Card>(Arrays.asList(cards)));
-         */
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
@@ -162,8 +151,6 @@ public class TilesView extends View {
         // 5) определить, какой из плиток коснулись
         // изменить её цвет на противоположный
         // 6) проверить, не выиграли ли вы (все плитки одного цвета)
-
-        //invalidate(); // заставляет экран перерисоваться
         return true;
     }
 
